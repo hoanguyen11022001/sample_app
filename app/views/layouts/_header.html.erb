@@ -1,0 +1,23 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand navbar-inverse">
+    <div class="container">
+      <%= link_to t("app_name"), "#" , class: "navbar-header navbar-brand" %>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <%= link_to t(".home"), home_path %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".help"), help_path %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".login"), "#" %>
+          </li>
+          <% I18n.available_locales.each do |lang| %>
+            <li class="nav-item">
+              <%= link_to lang.to_s.upcase, (request.path+"?locale=#{lang}") %>
+            </li>
+            <% end %>
+        </ul>
+    </div>
+  </nav>
+</header>
