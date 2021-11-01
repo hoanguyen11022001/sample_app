@@ -1,0 +1,16 @@
+vi:
+  app_name: "My Sample App"
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+  static_pages:
+    home:
+      home_html: "Chào mừng đến với My Sample App"
+      para_html: "Đây là trang chủ cho ứng dụng mẫu <a href=\"http://www.railstutorial.org\">Ruby on Rails Tutorial</a>."
+      sign_up: "Đăng ký ngay!"
+    help:
+      title: "Trợ giúp"
+      help_html: "<h1>Đang tìm kiếm sự trợ giúp?</h1>"
+      para_html: "Tìm hiểu thêm về Ruby on Rails <a href=\"http://www.railstutorial.org/help\">tại đây</a>."
