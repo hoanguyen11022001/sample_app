@@ -1,10 +1,24 @@
 vi:
+  activerecord:
+    attributes:
+      user:
+        name: "Họ tên"
+        email: "Địa chỉ email"
+        password: "Mật khẩu"
   app_name: "My Sample App"
+  welcome_logged_in_message_html: "Xin chào, <i>%{username}</i>"
+  user_not_found: "User không tồn tại"
   layouts:
     header:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      register: "Đăng ký"
+  shared:
+    error_messages:
+      please_resolve_errors:
+        one: "Xin hãy khắc phục %{count} lỗi"
+        other: "Xin hãy khắc phục %{count} lỗi"
   static_pages:
     home:
       home_html: "Chào mừng đến với My Sample App"
@@ -14,3 +28,8 @@ vi:
       title: "Trợ giúp"
       help_html: "<h1>Đang tìm kiếm sự trợ giúp?</h1>"
       para_html: "Tìm hiểu thêm về Ruby on Rails <a href=\"http://www.railstutorial.org/help\">tại đây</a>."
+  users:
+    new:
+      register: "Đăng ký"
+      confirmation: "Xác nhận mật khẩu"
+      submit: "Tạo tài khoản"

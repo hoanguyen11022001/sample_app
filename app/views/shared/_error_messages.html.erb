@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+  <div id="error_explanation" class="row">
+    <div class="alert alert-danger">
+      <%= t ".please_resolve_errors", count: @user.errors.count %>:
+      <ol>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ol>
+    </div>
+  </div>
+<% end %>
