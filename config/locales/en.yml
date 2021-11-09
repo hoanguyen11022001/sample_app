@@ -1,10 +1,24 @@
 en:
+  activerecord:
+    attributes:
+      user:
+        name: "Full name"
+        email: "Email address"
+        password: "Password"
   app_name: "My Sample App"
+  welcome_logged_in_message_html: "Hello, <i>%{username}</i>"
+  user_not_found: "User not found"
   layouts:
     header:
       home: "Home"
       help: "Help"
       login: "Login"
+      register: "Register"
+  shared:
+    error_messages:
+      please_resolve_errors:
+        one: "Please resolve %{count} error"
+        other: "Please resolve %{count} errors"
   static_pages:
     home:
       home_html: "Welcome to My Sample App"
@@ -14,3 +28,8 @@ en:
       title: "Help"
       help_html: "<h1>Looking for some Helps?</h1>"
       para_html: "Find help about Ruby on Rails <a href=\"http://www.railstutorial.org/help\">here</a>."
+  users:
+    new:
+      register: "Register"
+      confirmation: "Confirm password"
+      submit: "Create"

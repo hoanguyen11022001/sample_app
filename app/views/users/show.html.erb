@@ -1,0 +1,18 @@
+<% provide :title, @user.name %>
+<div class="container">
+  <aside class="row">
+    <section>
+      <div class="col-sm-2">
+        <%= gravatar_for @user %>
+      </div>
+      <div class="col">
+        <h1>
+          <%= @user.name %>
+        </h1>
+        <h1>
+          <%= @user.email %>
+        </h1>
+      </div>
+    </section>
+  </aside>
+</div>
