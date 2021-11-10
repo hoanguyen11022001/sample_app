@@ -5,15 +5,30 @@ vi:
         name: "Họ tên"
         email: "Địa chỉ email"
         password: "Mật khẩu"
+  helpers:
+    label:
+      session:
+        email: "Địa chỉ email"
+        password: "Mật khẩu"
   app_name: "My Sample App"
   welcome_logged_in_message_html: "Xin chào, <i>%{username}</i>"
   user_not_found: "User không tồn tại"
+  email_or_password_incorrect: "Email hoặc mật khẩu vừa nhập không chính xác"
   layouts:
     header:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
       register: "Đăng ký"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      account: "Tài khoản"
+      logout: "Đăng xuất"
+  sessions:
+    new:
+      new_user?: "Người dùng mới?"
+      register_now!: "Đăng ký ngay!"
+      submit: "Đăng nhập"
   shared:
     error_messages:
       please_resolve_errors:
