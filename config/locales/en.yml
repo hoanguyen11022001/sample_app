@@ -10,10 +10,13 @@ en:
       session:
         email: "Email address"
         password: "Password"
+        remember_me: "Remember me"
   app_name: "My Sample App"
   welcome_logged_in_message_html: "Hello, <i>%{username}</i>"
   user_not_found: "User not found"
   email_or_password_incorrect: "Your email or password is incorrect"
+  sign_up_now: "Sign up now!"
+  new_user: "New user?"
   layouts:
     header:
       home: "Home"
