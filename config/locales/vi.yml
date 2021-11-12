@@ -10,10 +10,13 @@ vi:
       session:
         email: "Địa chỉ email"
         password: "Mật khẩu"
+        remember_me: "Ghi nhớ đăng nhập"
   app_name: "My Sample App"
   welcome_logged_in_message_html: "Xin chào, <i>%{username}</i>"
   user_not_found: "User không tồn tại"
   email_or_password_incorrect: "Email hoặc mật khẩu vừa nhập không chính xác"
+  sign_up_now: "Đăng ký ngay!"
+  new_user: "Chưa có tài khoản?"
   layouts:
     header:
       home: "Trang chủ"
