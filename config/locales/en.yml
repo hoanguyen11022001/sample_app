@@ -11,12 +11,24 @@ en:
         email: "Email address"
         password: "Password"
         remember_me: "Remember me"
+  will_paginate:
+    previous_label: "&#8592; Previous page"
+    next_label: "Next page &#8594;"
   app_name: "My Sample App"
   welcome_logged_in_message_html: "Hello, <i>%{username}</i>"
   user_not_found: "User not found"
+  user_created_html: "User <i>%{username}</i> has been created successfully. Please login!"
+  user_updated_html: "Information of user <i>%{username}</i> has been updated successfully"
+  user_deleted_html: "User <i>%{username}</i> has been deleted successfully!"
+  user_deletion_failed_html: "Failed to delete user <i>%{username}</i>."
+  can_not_delete_self: "Can't delete your own account."
+  login_first: "Please login first"
+  must_same_user_html: "Must login as user <i>%{username}"
+  must_be_admin: "Must login as Admin"
   email_or_password_incorrect: "Your email or password is incorrect"
   sign_up_now: "Sign up now!"
   new_user: "New user?"
+  reset_text: "Reset default"
   layouts:
     header:
       home: "Home"
@@ -27,6 +39,7 @@ en:
       settings: "Settings"
       account: "Account"
       logout: "Logout"
+      users: "All users"
   sessions:
     new:
       new_user?: "New user?"
@@ -51,3 +64,5 @@ en:
       register: "Register"
       confirmation: "Confirm password"
       submit: "Create"
+    edit:
+      submit: "Update"

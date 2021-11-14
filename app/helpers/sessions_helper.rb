@@ -23,6 +23,10 @@ module SessionsHelper
     end
   end
 
+  def current_user? user
+    user && user == current_user
+  end
+
   def logged_in?
     # shorthand for checking if current user is present
     current_user.present?
@@ -32,5 +36,14 @@ module SessionsHelper
     session.delete(:user_id)
     cookies.delete :user_id if cookies.signed[:user_id]
     @current_user = nil
+  end
+
+  def save_back_url
+    session[:back_url] = request.original_url if request.get?
+  end
+
+  def redirect_back_or default
+    redirect_to session[:back_url] || default
+    session.delete :back_url
   end
 end
