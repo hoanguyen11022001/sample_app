@@ -8,9 +8,10 @@ class User < ApplicationRecord
                     format: {with: VALID_EMAIL_REGEX},
                     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-            length: {minimum: Settings.length.password_8}
+            length: {minimum: Settings.length.password_8}, allow_nil: true
   has_secure_password
   attr_accessor :remember_token
+  scope :order_by_name, ->(sort_order){order name: sort_order}
 
   class << self
     def new_token

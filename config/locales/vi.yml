@@ -11,12 +11,24 @@ vi:
         email: "Địa chỉ email"
         password: "Mật khẩu"
         remember_me: "Ghi nhớ đăng nhập"
+  will_paginate:
+    previous_label: "&#8592; Trang trước"
+    next_label: "Trang sau &#8594;"
   app_name: "My Sample App"
   welcome_logged_in_message_html: "Xin chào, <i>%{username}</i>"
-  user_not_found: "User không tồn tại"
+  user_not_found: "Người dùng không tồn tại"
+  user_created_html: "Người dùng <i>%{username}</i> đã được tạo. Vui lòng đăng nhập!"
+  user_updated_html: "Thông tin người dùng <i>%{username}</i> đã được cập nhật thành công"
+  user_deleted_html: "Người dùng <i>%{username}</i> đã được xóa!"
+  user_deletion_failed_html: "Xóa người dùng <i>%{username}</i> thất bại."
+  can_not_delete_self: "Không thể tự xóa tài khoản bản thân."
+  login_first: "Vui lòng đăng nhập"
+  must_same_user_html: "Phải đăng nhập bằng người dùng <i>%{username}"
+  must_be_admin: "Phải đăng nhập bằng Người quản trị"
   email_or_password_incorrect: "Email hoặc mật khẩu vừa nhập không chính xác"
   sign_up_now: "Đăng ký ngay!"
   new_user: "Chưa có tài khoản?"
+  reset_text: "Phục hồi mặc định"
   layouts:
     header:
       home: "Trang chủ"
@@ -27,6 +39,7 @@ vi:
       settings: "Cài đặt"
       account: "Tài khoản"
       logout: "Đăng xuất"
+      users: "Mọi người dùng"
   sessions:
     new:
       new_user?: "Người dùng mới?"
@@ -51,3 +64,5 @@ vi:
       register: "Đăng ký"
       confirmation: "Xác nhận mật khẩu"
       submit: "Tạo tài khoản"
+    edit:
+      submit: "Cập nhật"

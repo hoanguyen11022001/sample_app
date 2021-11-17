@@ -2,3 +2,5 @@ length:
   email_255: 255
   name_50: 50
   password_8: 8
+will_pagination:
+  per_page_10: 10

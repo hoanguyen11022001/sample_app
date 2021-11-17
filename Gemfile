@@ -3,7 +3,10 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.0"
 gem "bcrypt", "3.1.13"
+gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
+gem "faker", "2.1.2"
+gem "will_paginate", "3.1.8"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 6.1.4", ">= 6.1.4.1"
 # Use sqlite3 as the database for Active Record
